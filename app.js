@@ -1,7 +1,7 @@
 angular.module('todoapp', ['firebase'])
 
 function ToDoCtrl($scope, angularFire) {
-    var fireData = new Firebase('https://dazzling-heat-327.firebaseio.com/ ');
+    var fireData = new Firebase('https://blazing-inferno-9122.firebaseio.com/todo ');
     angularFire(fireData, $scope, 'todos')
     $scope.todos = [];
     //Add new todo
